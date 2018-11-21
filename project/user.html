@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>D20的个人空间</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="lib/bootstrap-4.1.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="lib/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="asserts/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="asserts/css/user.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a href="index.html"><img class="logo" src="asserts/img/logo-blue.png"></a>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">主站</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">比赛</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">直播</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">周边</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">会员</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">关于</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">下载工具</a>
+                    </li>
+                </ul>
+                <ul class="nav justify-content-end">
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img width="30px" height="30px" src="asserts/img/1.jpg" class="img-fluid rounded-circle"> 
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <h3 class="dropdown-item" style="text-align: center;">"D20"</h3>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="user.html">我的关注</a>
+                            <a class="dropdown-item" href="favorite.html">我的收藏</a>
+                            <a class="dropdown-item" href="history.html">我的历史</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="setting.html">设置</a>
+                            <a class="dropdown-item" href="index.html">注销</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="消息中心"><i class="fa fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="前往经纪人办公室"><i class="fa fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="userinfo-card">
+                        <div class="user-bg"></div>
+                        <div class="user-detail">
+                            <div class="user-profile">
+                                <a href="#">
+                                    <img src="asserts/img/1.jpg" class="img-fluid rounded-circle">
+                                </a>
+                            </div>
+                            <div class="user-nane">
+                                <a href="#">普通用户李劲言</a>
+                                <div class="user-intro"><i>Love playing.....</i></div>
+                            </div>
+                            <br><br>
+                            <div class="clearfix">
+                                <div class="float-left user-focuson">
+                                    <a href="#">关注</a>
+                                    <p>12</p>
+                                </div>
+                                <div class="float-left user-fans">
+                                    <a href="#">粉丝</a>
+                                    <p>12</p>
+                                </div>
+                            </div>
+                            <button type="button" style="width:100%;" class="btn">设置中心</button>
+                            <div class="divided-line"></div>
+                            <p class="user-email"><i class="fa fa-envelope-o"></i> <i>794486346@qq.com</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div>
+                        <nav id="my-sorts" class="nav">
+                            <a data-target="focus-on" class="nav-item nav-link active-custom" href="#">我的关注 </a>
+                            <a data-target="3d" class="nav-item nav-link" href="#">3D动画 <span class="badge badge-info" style="background-color:rgb(91, 158,  235)"></span></a>
+                            <a data-target="video" class="nav-item nav-link" href="#">视频 <span class="badge badge-info" style="background-color:rgb(91, 158,  235)"></span></a>
+                            <a data-target="picture" class="nav-item nav-link" href="#">图片 <span class="badge badge-info" style="background-color:rgb(91, 158,  235)"></span></a>
+                            <a data-target="caricature" class="nav-item nav-link" href="#">漫画 <span class="badge badge-info" style="background-color:rgb(91, 158,  235)"></span></a>
+                            <a data-target="music" class="nav-item nav-link" href="#">音乐 <span class="badge badge-info" style="background-color:rgb(91, 158,  235)"></span></a>
+                            <a data-target="fiction" class="nav-item nav-link" href="#">轻小说 <span class="badge badge-info" style="background-color:rgb(91, 158,  235)"></span></a>
+                        </nav>
+                        
+                        <!-- 我的关注 -->
+                        <div id="focus-on-column" class="my-column">
+                            <div class="card-columns">
+                                <div class="card">
+                                    <img class="card-img-top" src="asserts/img/01.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="#">偶像一</a></h5>
+                                        <p class="card-text">该偶像的简单介绍</p>
+                                        <p class="card-text"><small class="text-muted">3小时前更新</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="asserts/img/02.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="#">偶像一</a></h5>
+                                        <p class="card-text">该偶像的简单介绍</p>
+                                        <p class="card-text"><small class="text-muted">3小时前更新</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="asserts/img/03.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="#">偶像一</a></h5>
+                                        <p class="card-text">该偶像的简单介绍</p>
+                                        <p class="card-text"><small class="text-muted">3小时前更新</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="asserts/img/04.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="#">偶像一</a></h5>
+                                        <p class="card-text">该偶像的简单介绍</p>
+                                        <p class="card-text"><small class="text-muted">3小时前更新</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="asserts/img/05.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="#">偶像一</a></h5>
+                                        <p class="card-text">该偶像的简单介绍</p>
+                                        <p class="card-text"><small class="text-muted">3小时前更新</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="asserts/img/01.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="#">偶像一</a></h5>
+                                        <p class="card-text">该偶像的简单介绍</p>
+                                        <p class="card-text"><small class="text-muted">3小时前更新</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="asserts/img/02.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="#">偶像一</a></h5>
+                                        <p class="card-text">该偶像的简单介绍</p>
+                                        <p class="card-text"><small class="text-muted">3小时前更新</small></p>
+                                    </div>
+                                </div>
+                                <!-- <div class="card p-3">
+                                    <blockquote class="blockquote mb-0 card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer class="blockquote-footer">
+                                        <small class="text-muted">
+                                        Someone famous in <cite title="Source Title">Source Title</cite>
+                                        </small>
+                                    </footer>
+                                    </blockquote>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="asserts/img/02.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="asserts/img/04.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img" src="asserts/img/05.jpg" alt="Card image">
+                                </div>
+                                <div class="card p-3 text-right">
+                                    <img class="card-img-top" src="asserts/img/01.jpg" alt="Card image cap">
+                                    <blockquote class="blockquote mb-0">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer class="blockquote-footer">
+                                        <small class="text-muted">
+                                        Someone famous in <cite title="Source Title">Source Title</cite>
+                                        </small>
+                                    </footer>
+                                    </blockquote>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="asserts/img/background2.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        
+                        <!-- 3D动画 -->
+                        <div id="3d-column" class="my-column column-hiden">
+                            
+                            <ul class="activity-list">
+                                <li class="activity-item">
+                                    <div class="clearfix">
+                                        <div class="l-head float-left">
+                                            <a class="l-head-profile" href="#">
+                                                <img src="asserts/img/2.jpg" class="rounded-circle">
+                                            </a>
+                                            
+                                        </div>
+                                        <div class="float-left">
+                                            <a class="l-head-name" href="#">
+                                                IGN中国
+                                            </a>
+                                            <div class="tags-list">
+                                                <a href="#"><i class="fa fa-tag"></i> 巫师3</a>
+                                                <a href="#"><i class="fa fa-tag"></i> CDPR</a>
+                                                <a href="#"><i class="fa fa-tag"></i> 单机游戏</a>
+                                            </div>
+                                        </div>
+                                        <div class="float-right">
+                                            <div class="dropdown">
+                                                <a href="#" role="button" 
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" href="#">分享</a>
+                                                    <a class="dropdown-item" href="#">删除</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="content-link">
+                                        <a href="#" class="clearfix">
+                                            <div class="rounded content-cover float-left">
+                                                <img src="asserts/img/1e825178-0515-43a0-8977-de307363f1fa.jpg">
+                                            </div>
+                                            
+                                            <div class="content-info float-left h-100">
+                                                <h6>波兰人的RPG巫师</h6>
+                                                <p>
+                                                    《巫师》这款游戏在很多游戏网站的分类中都是“美式RPG”，
+                                                    这游戏咋看一眼也确实有着美式RPG的风貌。但是这却是一款地地道道的“波兰式”游戏，
+                                                    不论是主要角色的人物塑造，还是世界观设定中整个政治版图的分割，都默默的散发着
+                                                    一种“非主流”的气息，那么这种气息从何而来？听听麦教授的分析
+                                                </p>
+                                                
+                                            </div>
+                                            <div class="content-btn-list">
+                                                <p><i class="fa fa-heart-o"></i> 17</p>
+                                                <p><i class="fa fa-commenting-o"></i> 17</p>
+                                                <p><i class="fa fa-share-square-o"></i> 17</p>
+                                                <p><i class="fa fa-thumbs-o-up"></i> 17</p>
+                                                <p><i class="fa fa-thumbs-o-down"></i> 17</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <!-- 视频 -->
+                        <div id="video-column" class="my-column column-hiden">
+                            <ul class="activity-list">
+                                <li class="activity-item">
+                                    <div class="clearfix">
+                                        <div class="l-head float-left">
+                                            <a class="l-head-profile" href="#">
+                                                <img src="asserts/img/2.jpg" class="rounded-circle">
+                                            </a>
+                                            
+                                        </div>
+                                        <div class="float-left">
+                                            <a class="l-head-name" href="#">
+                                                IGN中国
+                                            </a>
+                                            <div class="tags-list">
+                                                <a href="#"><i class="fa fa-tag"></i> 巫师3</a>
+                                                <a href="#"><i class="fa fa-tag"></i> CDPR</a>
+                                                <a href="#"><i class="fa fa-tag"></i> 单机游戏</a>
+                                            </div>
+                                        </div>
+                                        <div class="float-right">
+                                            <a href="#">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="content-link">
+                                        <a href="#" class="clearfix">
+                                            <div class="rounded content-cover float-left">
+                                                <img src="asserts/img/1e825178-0515-43a0-8977-de307363f1fa.jpg">
+                                            </div>
+                                            
+                                            <div class="content-info float-left h-100">
+                                                <h6>波兰人的RPG巫师</h6>
+                                                <p>
+                                                    《巫师》这款游戏在很多游戏网站的分类中都是“美式RPG”，
+                                                    这游戏咋看一眼也确实有着美式RPG的风貌。但是这却是一款地地道道的“波兰式”游戏，
+                                                    不论是主要角色的人物塑造，还是世界观设定中整个政治版图的分割，都默默的散发着
+                                                    一种“非主流”的气息，那么这种气息从何而来？听听麦教授的分析
+                                                </p>
+                                                
+                                            </div>
+                                            <div class="content-btn-list">
+                                                <p><i class="fa fa-heart-o"></i> 17</p>
+                                                <p><i class="fa fa-commenting-o"></i> 17</p>
+                                                <p><i class="fa fa-share-square-o"></i> 17</p>
+                                                <p><i class="fa fa-thumbs-o-up"></i> 17</p>
+                                                <p><i class="fa fa-thumbs-o-down"></i> 17</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <!-- 图片 -->
+                        <div id="picture-column" class="my-column column-hiden">
+                            <ul class="activity-list">
+                                <li class="activity-item">
+                                    <div class="clearfix">
+                                        <div class="l-head float-left">
+                                            <a class="l-head-profile" href="#">
+                                                <img src="asserts/img/2.jpg" class="rounded-circle">
+                                            </a>
+                                            
+                                        </div>
+                                        <div class="float-left">
+                                            <a class="l-head-name" href="#">
+                                                IGN中国
+                                            </a>
+                                            <div class="tags-list">
+                                                <a href="#"><i class="fa fa-tag"></i> 巫师3</a>
+                                                <a href="#"><i class="fa fa-tag"></i> CDPR</a>
+                                                <a href="#"><i class="fa fa-tag"></i> 单机游戏</a>
+                                            </div>
+                                        </div>
+                                        <div class="float-right">
+                                            <a href="#">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="content-link">
+                                        <a href="#" class="clearfix">
+                                            <div class="rounded content-cover float-left">
+                                                <img src="asserts/img/1e825178-0515-43a0-8977-de307363f1fa.jpg">
+                                            </div>
+                                            
+                                            <div class="content-info float-left h-100">
+                                                <h6>波兰人的RPG巫师</h6>
+                                                <p>
+                                                    《巫师》这款游戏在很多游戏网站的分类中都是“美式RPG”，
+                                                    这游戏咋看一眼也确实有着美式RPG的风貌。但是这却是一款地地道道的“波兰式”游戏，
+                                                    不论是主要角色的人物塑造，还是世界观设定中整个政治版图的分割，都默默的散发着
+                                                    一种“非主流”的气息，那么这种气息从何而来？听听麦教授的分析
+                                                </p>
+                                                
+                                            </div>
+                                            <div class="content-btn-list">
+                                                <p><i class="fa fa-heart-o"></i> 17</p>
+                                                <p><i class="fa fa-commenting-o"></i> 17</p>
+                                                <p><i class="fa fa-share-square-o"></i> 17</p>
+                                                <p><i class="fa fa-thumbs-o-up"></i> 17</p>
+                                                <p><i class="fa fa-thumbs-o-down"></i> 17</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <!-- 漫画 -->
+                        <div id="caricature-column" class="my-column column-hiden">
+                            <ul class="activity-list">
+                                <li class="activity-item">
+                                    <div class="clearfix">
+                                        <div class="l-head float-left">
+                                            <a class="l-head-profile" href="#">
+                                                <img src="asserts/img/2.jpg" class="rounded-circle">
+                                            </a>
+                                            
+                                        </div>
+                                        <div class="float-left">
+                                            <a class="l-head-name" href="#">
+                                                IGN中国
+                                            </a>
+                                            <div class="tags-list">
+                                                <a href="#"><i class="fa fa-tag"></i> 巫师3</a>
+                                                <a href="#"><i class="fa fa-tag"></i> CDPR</a>
+                                                <a href="#"><i class="fa fa-tag"></i> 单机游戏</a>
+                                            </div>
+                                        </div>
+                                        <div class="float-right">
+                                            <a href="#">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="content-link">
+                                        <a href="#" class="clearfix">
+                                            <div class="rounded content-cover float-left">
+                                                <img src="asserts/img/1e825178-0515-43a0-8977-de307363f1fa.jpg">
+                                            </div>
+                                            
+                                            <div class="content-info float-left h-100">
+                                                <h6>波兰人的RPG巫师</h6>
+                                                <p>
+                                                    《巫师》这款游戏在很多游戏网站的分类中都是“美式RPG”，
+                                                    这游戏咋看一眼也确实有着美式RPG的风貌。但是这却是一款地地道道的“波兰式”游戏，
+                                                    不论是主要角色的人物塑造，还是世界观设定中整个政治版图的分割，都默默的散发着
+                                                    一种“非主流”的气息，那么这种气息从何而来？听听麦教授的分析
+                                                </p>
+                                                
+                                            </div>
+                                            <div class="content-btn-list">
+                                                <p><i class="fa fa-heart-o"></i> 17</p>
+                                                <p><i class="fa fa-commenting-o"></i> 17</p>
+                                                <p><i class="fa fa-share-square-o"></i> 17</p>
+                                                <p><i class="fa fa-thumbs-o-up"></i> 17</p>
+                                                <p><i class="fa fa-thumbs-o-down"></i> 17</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <!-- 音乐 -->
+                        <div id="music-column" class="my-column column-hiden">
+                            <ul class="activity-list">
+                                <li class="activity-item">
+                                    <div class="clearfix">
+                                        <div class="l-head float-left">
+                                            <a class="l-head-profile" href="#">
+                                                <img src="asserts/img/2.jpg" class="rounded-circle">
+                                            </a>
+                                            
+                                        </div>
+                                        <div class="float-left">
+                                            <a class="l-head-name" href="#">
+                                                IGN中国
+                                            </a>
+                                            <div class="tags-list">
+                                                <a href="#"><i class="fa fa-tag"></i> 巫师3</a>
+                                                <a href="#"><i class="fa fa-tag"></i> CDPR</a>
+                                                <a href="#"><i class="fa fa-tag"></i> 单机游戏</a>
+                                            </div>
+                                        </div>
+                                        <div class="float-right">
+                                            <a href="#">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="content-link">
+                                        <a href="#" class="clearfix">
+                                            <div class="rounded content-cover float-left">
+                                                <img src="asserts/img/1e825178-0515-43a0-8977-de307363f1fa.jpg">
+                                            </div>
+                                            
+                                            <div class="content-info float-left h-100">
+                                                <h6>波兰人的RPG巫师</h6>
+                                                <p>
+                                                    《巫师》这款游戏在很多游戏网站的分类中都是“美式RPG”，
+                                                    这游戏咋看一眼也确实有着美式RPG的风貌。但是这却是一款地地道道的“波兰式”游戏，
+                                                    不论是主要角色的人物塑造，还是世界观设定中整个政治版图的分割，都默默的散发着
+                                                    一种“非主流”的气息，那么这种气息从何而来？听听麦教授的分析
+                                                </p>
+                                                
+                                            </div>
+                                            <div class="content-btn-list">
+                                                <p><i class="fa fa-heart-o"></i> 17</p>
+                                                <p><i class="fa fa-commenting-o"></i> 17</p>
+                                                <p><i class="fa fa-share-square-o"></i> 17</p>
+                                                <p><i class="fa fa-thumbs-o-up"></i> 17</p>
+                                                <p><i class="fa fa-thumbs-o-down"></i> 17</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <!-- 轻小说 -->
+                        <div id="fiction-column" class="my-column column-hiden">
+                            <ul class="activity-list">
+                                <li class="activity-item">
+                                    <div class="clearfix">
+                                        <div class="l-head float-left">
+                                            <a class="l-head-profile" href="#">
+                                                <img src="asserts/img/2.jpg" class="rounded-circle">
+                                            </a>
+                                            
+                                        </div>
+                                        <div class="float-left">
+                                            <a class="l-head-name" href="#">
+                                                IGN中国
+                                            </a>
+                                            <div class="tags-list">
+                                                <a href="#"><i class="fa fa-tag"></i> 巫师3</a>
+                                                <a href="#"><i class="fa fa-tag"></i> CDPR</a>
+                                                <a href="#"><i class="fa fa-tag"></i> 单机游戏</a>
+                                            </div>
+                                        </div>
+                                        <div class="float-right">
+                                            <a href="#">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="content-link">
+                                        <a href="#" class="clearfix">
+                                            <div class="rounded content-cover float-left">
+                                                <img src="asserts/img/1e825178-0515-43a0-8977-de307363f1fa.jpg">
+                                            </div>
+                                            
+                                            <div class="content-info float-left h-100">
+                                                <h6>波兰人的RPG巫师</h6>
+                                                <p>
+                                                    《巫师》这款游戏在很多游戏网站的分类中都是“美式RPG”，
+                                                    这游戏咋看一眼也确实有着美式RPG的风貌。但是这却是一款地地道道的“波兰式”游戏，
+                                                    不论是主要角色的人物塑造，还是世界观设定中整个政治版图的分割，都默默的散发着
+                                                    一种“非主流”的气息，那么这种气息从何而来？听听麦教授的分析
+                                                </p>
+                                                
+                                            </div>
+                                            <div class="content-btn-list">
+                                                <p><i class="fa fa-heart-o"></i> 17</p>
+                                                <p><i class="fa fa-commenting-o"></i> 17</p>
+                                                <p><i class="fa fa-share-square-o"></i> 17</p>
+                                                <p><i class="fa fa-thumbs-o-up"></i> 17</p>
+                                                <p><i class="fa fa-thumbs-o-down"></i> 17</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="page-footer">
+        <p>© 2018 VirtualIdol, Com.</p>
+    </div>
+</body>
+<script src="lib/jquery.min.js"></script>
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+<script src="lib/bootstrap-4.1.3-dist/js/bootstrap.bundle.js"></script>
+<script src="lib/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/popper.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="asserts/js/main.js"></script>
+</html>

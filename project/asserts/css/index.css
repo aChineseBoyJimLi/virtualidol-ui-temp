@@ -1,0 +1,78 @@
+body{
+    overflow: hidden;
+    width:100vw;
+    height:100vh;
+    background-image: url("../img/03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-link{
+    color:#ddd !important;
+}
+.nav-link:hover{
+    color:rgb(91, 158, 235) !important;
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom , rgba(12,10,12,1) 0%,  rgba(12,10,12,0.9) 5%,rgba(25,25,25,0.55) 50%, rgba(25,25,25,0.25) 100%);
+    z-index: -1;    
+}
+
+.main-block{
+    width:90%;
+    color:#ddd;
+    margin-top:32vh;
+    /* margin-left:50px; */
+    opacity: 0;
+}
+
+.main-btns{
+    margin-top:38vh;
+    opacity: 0;
+    /* margin-right:50px; */
+}
+
+.main-btns .btn-custom{
+    display:block;
+    float: right;
+    width:120px;
+    border:none;
+    margin-left:20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    color:#eee;
+    padding:7px 0 7px 0;
+    background-color:rgb(91, 158, 235);
+    /* letter-spacing: 8px; */
+}
+.main-btns .btn-custom:hover{
+    background-color:rgb(78, 149, 230);
+}
+.main-btns .btn-custom:nth-child(1){
+    color:#666;
+    background-color:#eee;
+}
+.main-btns .btn-custom:nth-child(1):hover{
+    background-color:rgb(224, 221, 221);
+}
+
+.container div h3 {
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+.container div h3 span{
+    letter-spacing: 8px;
+    font-size: 40px;
+    font-weight: 600;
+    color:rgb(91, 158, 235);
+}
+
+

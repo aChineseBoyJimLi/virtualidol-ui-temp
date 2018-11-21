@@ -1,0 +1,69 @@
+/***********************全局样式********************/
+body{
+    width:100vw;
+    min-height: 100vh;
+    background-color: #eee;
+    overflow-x: hidden;
+}
+a{
+    color:#999;
+    font-size:15px;
+}
+a:hover{
+    color:rgb(91, 158,  235);
+}
+li{
+    list-style-type:none;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+
+.bg-light{
+    background-color:#fff !important;
+    padding:0;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 0.5px 1px #ccc;
+    width:100%;
+    z-index: 2;
+    position: fixed;
+    top:0;
+}
+
+.main{
+    width:100%;
+    margin-top:75px;
+    min-height: 100vh;
+}
+
+.container{
+    min-width: 1140px;
+}
+
+.page-footer{
+    width:100%;
+    height:100px;
+    border-top:1px solid rgba(0,0,0,.125);
+    margin-top:80px;
+    padding:30px 0 30px 0;
+    font-size: 10px;
+    text-align: center;
+    background-color:#fff;
+}
+
+.threePoint {
+    color: #666;
+}
+
+.threePointClicked {
+    color: rgb(91, 158,  235);
+}
+
+.logo{
+    width:90px;
+    height:50px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
